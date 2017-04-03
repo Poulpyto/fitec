@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #00ffff;
+	color : red;
+}
+
+.madiv{
+	background-color: green;
+	color: yellow;	
+}

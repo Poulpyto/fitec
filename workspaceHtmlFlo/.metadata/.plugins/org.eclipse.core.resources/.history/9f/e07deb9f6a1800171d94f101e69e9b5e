@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+body{
+	background-color: #2CC8B4;
+}
+
+p{
+	background-color: #C3C82C;
+	font-family: cursive;
+	font-size: 20 px;
+	margin-top: 160 px;
+}

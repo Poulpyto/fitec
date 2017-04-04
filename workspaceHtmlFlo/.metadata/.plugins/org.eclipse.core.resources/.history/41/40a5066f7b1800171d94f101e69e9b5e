@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #00ffff;
+	color : red;
+}
+
+p{
+	
+}

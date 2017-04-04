@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+.p1 {
+	text-align: center;
+}
+
+.p2 {
+	
+}

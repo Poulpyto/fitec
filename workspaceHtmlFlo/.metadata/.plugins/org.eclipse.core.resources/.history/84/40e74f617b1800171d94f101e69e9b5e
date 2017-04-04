@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style3.css" />
+		<title>div et span</title>
+	</head>
+	<body>
+		<p> premier paragraphe </p>
+		<p>	second paragraphe </p>
+		<p> troisieme paragraphe </p>
+		
+	</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style7.css" />
+<title>block display</title>
+</head>
+<body>
+		<p class="p1">premier paragraphe</p>
+		<p class="p2">second paragraphe </p>
+</body>
+</html>

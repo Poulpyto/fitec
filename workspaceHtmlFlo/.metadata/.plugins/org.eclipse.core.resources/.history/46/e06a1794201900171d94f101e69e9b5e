@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Modele 1</title>
+<link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+	<div id="entete">
+		Site de démonstration
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style8.css" />
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+	<h1>Position</h1>
+	<p class="p1">un premier paragraphe</p>
+		<p class="p2">un second paragraphe </p>
+	</div>
+</body>
+</html>

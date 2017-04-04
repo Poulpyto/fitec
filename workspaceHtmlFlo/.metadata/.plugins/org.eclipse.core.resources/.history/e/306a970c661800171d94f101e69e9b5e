@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ma page de merde</title>
+</head>
+<!-- contenu du site -->
+<body>
+bonjour moi meme!
+<h1>Titre principal</h1>
+<h2>titre important</h2>
+<h3> etc jusqua h6</h3>
+<h6>annotation</h6>
+
+<p>premier paragraphe</p>
+<hr/><!-- trait de séparation -->
+<p>deuxieme paragraphe<br/> avec saut de ligne</p>
+<!-- indiquer un texte tres important -->
+HTML signifie <strong>Hypertext Markup language</strong>.
+<br/>ce language est utilisé pour marquer sémantiquement un contenu.
+<!-- creation de listes , ul = non ordonné, ol = ordonné -->
+<ul>
+<li> 1er truc de liste ul</li>
+<li> 2nd truc de liste ul</li>
+<li> 3eme truc de liste ul</li>
+</ul>
+<ol type="A"><!-- on peut changer de type de numerotation -->
+<li> 1er truc de liste ol</li>
+<li> 2nd truc de liste ol</li>
+<li> 3eme truc de liste ol</li>
+</ol>
+
+
+
+<!--tableau a lawalegen-->
+<table border ="1" width ="42%" cellspacing="0">
+<tr>
+<th colspan ="3"> Legende </th><td>toto</td><td>titi</td>
+</tr>
+<td rowspan = "5" valign="top">titre cellule</td>
+</table>
+<hr/>
+<a href="https://fr.wikipedia.org"> aller sur wikipedia</a>blablabla
+<br/>
+<a href="C:\Users\Stagiaire\Desktop\workspaceHtmlFlo\PremierTp\WebContent\NewFile.html">aller sur ma seconde page</a>
+<br/>
+<img alt="image de truc" src= "img/tanouki.jpg"/> tanuki inline
+<!-- recupere fichier audio -->
+<audio controls loop>
+<source src = "mp3/Kalimba.mp3">
+votre navigateur n'est pas a jour
+</audio>
+<!-- ma facon -->
+<audio controls src="mp3/Kalimba.mp3" loop></audio>type inline
+<hr/>
+<!-- recupere video, preferer mp4 -->
+<video src="video/Wildlife.wmv"></video>
+
+<!-- test solo
+<div>
+ toto de la div 
+ <p><h2> paragraphe h2</h2></p>
+ <p> paragraphe 2</p>
+ <li>toto</li>
+ <li>tata</li>
+ </div>
+ <br>
+ <div>2eme div</div>
+<table>tableau<div><th>toto</th><td>titi</td></div></table>
+<mark>titi</mark><!-- surligner
+<em>titi</em><!-- italique -->
+
+</body>
+</html>

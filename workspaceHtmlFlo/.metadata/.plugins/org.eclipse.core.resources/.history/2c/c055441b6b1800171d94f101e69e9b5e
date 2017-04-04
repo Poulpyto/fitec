@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML et CSS</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<h1>titre ne niveau 1</h1>
+		<p>un paragraphe</p>
+		<p>second paragraphe</p>
+	</body>
+</html>

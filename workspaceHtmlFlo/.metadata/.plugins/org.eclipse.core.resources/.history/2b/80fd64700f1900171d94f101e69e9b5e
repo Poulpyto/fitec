@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style5.css" />
+<title>model en boite en erreur</title>
+</head>
+<body>
+<div>
+		<h1> modele en boite</h1>
+		<p>premier paragraphe</p>
+		<p>second paragraphe </p>
+	</div>
+</body>
+</html>

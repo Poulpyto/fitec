@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ma page de merde</title>
+</head>
+<!-- contenu du site -->
+<body>
+bonjour moi meme!
+<h1>Titre principal</h1>
+<h2>titre important</h2>
+<h3> etc jusqua h6</h3>
+<h6>annotation</h6>
+
+<p>premier paragraphe</p>
+<hr/><!-- trait de séparation -->
+<p>deuxieme paragraphe<br/> avec saut de ligne</p>
+<!-- indiquer un texte tres important -->
+HTML signifie <strong>Hypertext Markup language</strong>.
+<br/>ce language est utilisé pour marquer sémantiquement un contenu.
+<br/>
+<table border ="1" width ="42%" cellspacing="0">
+<tr>
+<th colspan ="3"> Legende </th><td>toto</td><td>titi</td>
+</tr>
+<td rowspan = "5"
+valign="top">titre cellule</td>
+</table>
+<!-- test solo
+<div>
+ toto de la div 
+ <p><h2> paragraphe h2</h2></p>
+ <p> paragraphe 2</p>
+ <li>toto</li>
+ <li>tata</li>
+ </div>
+ <br>
+ <div>2eme div</div>
+<table>tableau<div><th>toto</th><td>titi</td></div></table>
+<mark>titi</mark><!-- surligner
+<em>titi</em><!-- italique -->
+
+</body>
+</html>

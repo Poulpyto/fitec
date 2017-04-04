@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<linkrel = "stylesheet" href="/css/style2.css">
+	<title>id et classes</title>
+</head>
+<body>
+	<h2 class="titi">titre lvl2</h2>
+	<p id="toto">1 paragraphe</p>
+	<p class="titi">2 paragraphe</p>
+</body>
+</html>

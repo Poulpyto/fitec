@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML et CSS</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<h1>titre de niveau 1</h1>
+		<p>un paragraphe</p>
+		<p>second paragraphe</p>
+		<p class="toto">troisieme paragraphe</p>
+		<a href="C:\Users\Stagiaire\Desktop\workspaceHtmlFlo\PremierTp\WebContent\NewFile.html">aller sur ma seconde page</a>
+	</body>
+</html>

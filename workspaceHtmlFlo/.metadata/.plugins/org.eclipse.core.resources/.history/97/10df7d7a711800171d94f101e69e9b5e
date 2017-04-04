@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+#toto{
+	color: blue;
+}
+
+.titi{
+	color: green;
+}
+p{
+	
+}

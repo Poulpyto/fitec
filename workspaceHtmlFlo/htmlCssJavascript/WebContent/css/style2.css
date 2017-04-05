@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+
+.styledown{
+	color: cyan;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.styleup{
+	color: orange;
+}

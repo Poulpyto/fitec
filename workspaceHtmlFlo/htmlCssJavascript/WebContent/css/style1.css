@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+
+.para{
+	color: red;
+}
+
+.para1{
+	color: blue;
+}
+
+
+#gros_titre{
+	color: yellow;
+}
+#change{
+	color: cyan;
+}
+
+img {
+	width : 500px;
+}
+.posx{
+	color: green;
+}
+.posy{
+	text-align: right;
+}

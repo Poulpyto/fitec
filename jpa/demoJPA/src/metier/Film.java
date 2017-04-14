@@ -26,7 +26,7 @@ public abstract class Film {
 	//@GeneratedValue(strategy=GenerationType.TABLE)
 	private int		idFilm;
 	private String	nomFilm;
-	@ManyToMany(cascade=CascadeType.PERSIST)
+	@ManyToMany(cascade=CascadeType.PERSIST, mappedBy="films")//film = esclave
 	private Collection<Contact> contacts;
 	
 	public Collection<Contact> getContacts() {

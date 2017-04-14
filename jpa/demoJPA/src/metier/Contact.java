@@ -19,7 +19,7 @@ public abstract class Contact {
 	private String	nom;
 	private String	prenom;
 	private String	email;
-	@ManyToMany(cascade=CascadeType.PERSIST, mappedBy="contacts")
+	@ManyToMany(cascade=CascadeType.PERSIST)//contact = maitre
 	private Collection<Film> films;
 	@ManyToOne(cascade=CascadeType.PERSIST)
 	private Adresse adresse;

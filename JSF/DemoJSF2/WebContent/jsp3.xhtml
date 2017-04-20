@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+
+<html 
+   xmlns = "http://www.w3.org/1999/xhtml" 
+   xmlns:h = "http://java.sun.com/jsf/html" 
+   xmlns:f = "http://java.sun.com/jsf/core"
+>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+blabla<br/>
+#{mbean1.message}<br/>
+${mbean1.m2}<br/>
+jSP3FILE
+<h:form id="laForm">
+<h:messages>
+<h:panelGrid columns="3" >	
+<f:facet name="header">
+	<h:outputLabel value ="Saisie Controle"/>
+	</f:facet>
+				<h:outputLabel value="data : "/> 
+				<h:inputText id="inputData" value = "#{mbean1.data}" label="inputData">
+			  <f:validateLength maximum="15"/>
+			  </h:inputText>
+			  <h:message for="inputData" />
+			
+				<h:outputLabel value="data2 : "/> 
+				<h:inputText id="inputData2" value = "#{mbean1.data2}"/>  
+				 <h:message for="inputData2" />
+				
+				 <h:outputLabel value="Civilite :"/>	
+				 <h:inputText id="civilite" value = "#{mbean1.civilite}" required="true">
+				  <f:validator validatorId = "civiliteValidateur"/>
+				  </h:inputText>				
+				 <h:message for="civilite" style="color:red" />
+		</h:panelGrid>
+</h:messages>
+Les deux: <h:outputText value= "#{mbean1.lesDeux}"/><br/>
+<h:commandButton type ="submit" value="valider" action="jsf3result"/><br/>
+<h:commandButton type="submit" value="go conditionnel" action="#{mbean1.goConditionnel}"/><br/>
+<h:commandButton type="submit" value="go navigation rule 1" action="pagesuivante"/><br/>
+<h:commandButton type="submit" value="go navigation rule cas d'erreur" action="#{mbean1.testErreur}"/><br/>
+
+</h:form>
+
+</body>
+</html>

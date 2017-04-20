@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+
+<html 
+   xmlns = "http://www.w3.org/1999/xhtml" 
+   xmlns:h = "http://java.sun.com/jsf/html" 
+   xmlns:f = "http://java.sun.com/jsf/core"
+>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+<h:form>
+<h:messages>
+<h:dataTable value = "#{mbclients.clients}" var = "client"> 
+   
+   <h:column>    				
+      <f:facet name = "header">Nom</f:facet>    				
+      #{client.nom}
+   </h:column>
+   
+   <h:column>
+      <f:facet name = "header">Prenom</f:facet>
+      #{client.prenom}
+   </h:column>
+   <h:column>
+   	<f:facet name="header">Valider</f:facet>
+   	<h:commandButton type = "submit" value ="clique sur moi" action="#{mbclients.select(client)}"/>
+   </h:column>
+   </h:dataTable>
+   <h:outputLabel value="nom"/> 
+				<h:inputText id="nom" value = "#{mbclients.nom}" label="nom"/>
+				<h:outputLabel value="prenom"/> 
+				<h:inputText id="prenom" value = "#{mbclients.prenom}" label="prenom"/>
+   	<h:commandButton type = "submit" value ="ajouter client" action="#{mbclients.add(mbclients.nom, mbclients.prenom)}"/>
+   </h:messages>
+   </h:form>
+</body>
+</html>

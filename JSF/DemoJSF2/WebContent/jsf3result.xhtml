@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+		Concatenation :
+		<h:outputText value="#{mbean1.lesDeux}"/>
+		<br/><br/>
+		
+		<h:form id="laFormResult">
+			Saisie dataResult :
+			<h:inputText value="#{mbeanresult.dataResult}"/>
+			<br/><br/>
+			
+			<h:commandButton type="submit" value="Resultat"/>
+			<br/><br/>
+			
+			<h:commandButton type="submit" value="Back" action="jsf3result2"/>
+			<br/><br/>
+			
+			<h:outputText id="inputDataResult" value="Result"/>
+			<h:message for="inputDataResult"/>
+		</h:form>
+		
+	</body>
+</html>

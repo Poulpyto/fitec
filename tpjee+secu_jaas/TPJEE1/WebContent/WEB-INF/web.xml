@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>TPJEE1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <resource-ref>
+  <description>DB connexion</description>
+  <res-ref-name>jdbc/jaas</res-ref-name>
+   <res-type>javax.sql.DataSource</res-type>
+  <res-auth>Container</res-auth>
+  </resource-ref>
+  <security-constraint>
+  <display-name>authentification superuser</display-name>
+  <web-resource-collection>
+  	<web-resource-name>page ajouter client</web-resource-name>
+  	<url-pattern>/superuser/*</url-pattern>
+  </web-resource-collection>
+  <auth-constraint>
+  	<role-name>superuser</role-name>
+  </auth-constraint>
+  </security-constraint>
+  <login-config>
+  	<auth-method>FORM</auth-method>
+  	<realm-name>Espace sécuriser</realm-name>
+  	<form-login-config>
+			<form-login-page>/login.jsp</form-login-page>
+			<form-error-page>/error.jsp</form-error-page>
+		</form-login-config>
+  </login-config>
+  <security-role>
+  <description>Super User</description>
+  <role-name>superuser</role-name>
+  </security-role>
+</web-app>

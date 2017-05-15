@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>TPSecuJAAS</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- déclaration de la datasource -->
+  <resource-ref>
+  <description>DB connection</description>
+  <!-- nom jndi -->
+  <res-ref-name>jdbc/jaas</res-ref-name>
+  <res-type>javax.sql.DataSource</res-type>
+  <res-auth>Container</res-auth>
+  </resource-ref>
+  <!-- Mise en place de la protection -->
+<security-constraint>
+	<display-name>authentification admin</display-name>
+<!-- liste des pages protegees -->
+	<web-resource-collection>
+		<web-resource-name>les pages admin</web-resource-name>
+		<url-pattern>/admin/*</url-pattern>
+	</web-resource-collection>
+	<!-- role des utilisateurs qui y ont acces -->
+	<auth-constraint>
+		<role-name>admin</role-name>
+	</auth-constraint>
+</security-constraint>
+<!-- interface de connexion/type d'identification -->
+<!-- mode basic -->
+<!-- <login-config>
+	 <auth-method>BASIC</auth-method>
+	<realm-name>Espace sécurisé</realm-name>
+</login-config>-->
+<!-- Mode Form -->
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<realm-name>Espace securiser</realm-name>
+		<!-- declaration de formulaire de connexion -->
+		<form-login-config>
+			<form-login-page>/login.jsp</form-login-page>
+			<form-error-page>/error.jsp</form-error-page>
+		</form-login-config>
+	</login-config>
+<!-- role utilisé dans lapplication -->
+<security-role>
+	<description>Admin</description>
+	<role-name>admin</role-name>
+</security-role>
+  
+</web-app>
